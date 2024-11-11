@@ -33,7 +33,6 @@ class FavoritesAdapter(private var favoritesList: MutableList<Historique>) :
         val productImage: ImageView = itemView.findViewById(R.id.ivProductImage)
         val productName: TextView = itemView.findViewById(R.id.tvProductName)
         val historyDate: TextView = itemView.findViewById(R.id.tvDateHistory)
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FavoritesViewHolder {

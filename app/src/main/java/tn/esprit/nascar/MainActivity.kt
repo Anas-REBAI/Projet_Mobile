@@ -19,67 +19,7 @@ class MainActivity : AppCompatActivity() {
         binding =ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val toolbar: Toolbar = binding.toolbar.appBar
-        setSupportActionBar(toolbar)
-
-        binding.btnNews.setOnClickListener {
-            changeFragment(NewsFragment(), "")
-        }
-
-        binding.btnEvents.setOnClickListener {
-            changeFragment(EventsFragment(), "")
-        }
-
-        binding.btnProfile.setOnClickListener {
-            changeFragment(ProfileFragment(), "")
-        }
-
-        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, NewsFragment()).commit()
-    }
-
-    private fun changeFragment(fragment: Fragment, name: String) {
-
-        if (name.isEmpty())
-            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit()
-        else
-            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).addToBackStack("").commit()
-
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_toolbar, menu)
-        return super.onCreateOptionsMenu(menu)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-
-        when(item.itemId){
-            R.id.logoutMenu ->{
-                val builder = AlertDialog.Builder(this)
-                builder.setTitle("Logout")
-                builder.setMessage("Are you sure you want to logout ?")
-                builder.setPositiveButton("Yes"){ dialogInterface, which ->
-                    finish()
-                }
-                builder.setNegativeButton("No"){dialogInterface, which ->
-                    dialogInterface.dismiss()
-                }
-                builder.create().show()
-            }
-        }
-
-        return super.onOptionsItemSelected(item)
-    }
-
-
-    private fun removeUserFromPreferences() {
-        val sharedPref = getSharedPreferences("UserPreferences", MODE_PRIVATE)
-        with(sharedPref.edit()) {
-            remove("userId")
-            remove("userName")
-            remove("userPhone")
-            apply()
-        }
+        supportFragmentManager.beginTransaction().replace(R.id.fragment_container, EventsFragment()).commit()
     }
 
 }
