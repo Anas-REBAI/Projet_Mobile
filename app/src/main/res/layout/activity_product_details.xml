@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ProductDetailsActivity">
+
+    <ImageView
+        android:id="@+id/iv_image_product_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_event1"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_name_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/tv_productDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Product Description"
+            android:padding="8dp"
+            android:drawableLeft="@drawable/baseline_description_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/tv_carbonFootprint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Empreinte carbone"
+            android:padding="8dp"
+            android:drawableLeft="@drawable/baseline_co2_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_waterConsumption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Consommation d'eau"
+            android:padding="8dp"
+            android:drawableLeft="@drawable/baseline_water_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_recyclability"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Recyclabilité"
+            android:padding="8dp"
+            android:drawableLeft="@drawable/baseline_recycling_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/tv_brand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Brand"
+            android:padding="8dp"
+            android:drawableLeft="@drawable/baseline_store_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Price"
+            android:padding="8dp"
+            android:drawableLeft="@drawable/baseline_attach_money_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_stock"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Stock"
+            android:padding="8dp"
+            android:drawableLeft="@drawable/baseline_production_quantity_limits_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Category"
+            android:padding="8dp"
+            android:drawableLeft="@drawable/baseline_category_24"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
